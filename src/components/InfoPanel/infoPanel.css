@@ -1,0 +1,23 @@
+.info-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.info-panel__timer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #2c3e50;
+    cursor: default;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-panel__item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #2c3e50;
+    cursor: default;
+    margin: .5px 0;
+}

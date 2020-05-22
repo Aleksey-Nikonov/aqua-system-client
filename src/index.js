@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import './fonts/Lato-Bold.ttf';
+import './fonts/Roboto-Regular.ttf';
+import '../node_modules/normalize.css/normalize.css';
 
 ReactDOM.render(
   <React.StrictMode>
