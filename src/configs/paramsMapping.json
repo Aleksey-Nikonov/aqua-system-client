@@ -1,0 +1,106 @@
+{
+    "fishWeight": {
+        "description": "Fish Weigh",
+        "unit": "kg"
+    },
+    "plantsCondition": {
+        "description": "Plants Condition",
+        "unit": "%"
+    },
+    "waterVolume": {
+        "description": "Water Volume",
+        "unit": "lit"
+    },
+    "oxygenEnrichmentPressure": {
+        "description": "Oxygen Enrichment Pressure",
+        "unit": "atm"
+    },
+    "carbonDioxideRemovalPower": {
+        "description": "Carbon Dioxide Removal Power",
+        "unit": "mg/lit/min"
+    },
+    "pumpClockFrequency": {
+        "description": "Pump Clock Frequency",
+        "unit": "gc"
+    },
+    "filterCleaningFrequency": {
+        "description": "Filter Cleaning Frequency",
+        "unit": "gc"
+    },
+    "indoorTemperature": {
+        "description": "Indoor Temperature",
+        "unit": "°С"
+    },
+    "fishTanksWaterLevel": {
+        "description": "Fish Tanks Water Level",
+        "unit": "m"
+    },
+    "indoorHumidity": {
+        "description": "Indoor Humidity",
+        "unit": "%"
+    },
+    "phLevel": {
+        "description": "Ph Level",
+        "unit": "pH"
+    },
+    "oxygenLevel": {
+        "description": "Oxygen Level",
+        "unit": "mg/lit"
+    },
+    "carbonDioxideLevel": {
+        "description": "Carbon Dioxide Level",
+        "unit": "mg/lit"
+    },
+    "aquaSystemTemperature": {
+        "description": "Aqua System Temperature",
+        "unit": "°С"
+    },
+    "inOutFilterWaterPressure": {
+        "description": "In/Out Filter Water Pressure",
+        "unit": "atm"
+    },
+    "pumpCurrent": {
+        "description": "Pump Current",
+        "unit": "A"
+    },
+    "sumpWaterLevel": {
+        "description": "Sump Water Level",
+        "unit": "m"
+    },
+    "mechanicalFilterWaterLevel": {
+        "description": "Mechanical Filter Water Level",
+        "unit": "m"
+    },
+    "biologicalFilterWaterLevel": {
+        "description": "Biological Filter Water Level",
+        "unit": "m"
+    },
+    "plantSpaceWaterLevel": {
+        "description": "Plant Space Water Level",
+        "unit": "m"
+    },
+    "carbonDioxideRemovalWaterLevel": {
+        "description": "Carbon Dioxide Removal Water Level",
+        "unit": "m"
+    },
+    "nitrogenLevel": {
+        "description": "Nitrogen Level",
+        "unit": "mg/lit"
+    },
+    "ammoniaLevel": {
+        "description": "Ammonia Level",
+        "unit": "mg/lit"
+    },
+    "nitratesLevel": {
+        "description": "Nitrates Level",
+        "unit": "mg/lit"
+    },
+    "nitritesLevel": {
+        "description": "Nitrites Level",
+        "unit": "mg/lit"
+    },
+    "waterFlowingSpeed": {
+        "description": "Water Flowing Speed",
+        "unit": "1.2 m/sec"
+    }
+}

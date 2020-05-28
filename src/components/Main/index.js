@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import Text from '../Text'
 import InfoPanel from '../InfoPanel'
+import ControlPanel from '../ControlPanel'
+import Visualizer from '../Visualizer'
 
 import './main.css'
 
@@ -14,7 +16,8 @@ export default function Main({ parameters }) {
                 </div>
                 <div className='main-content__dashboard'>
                     <div className='main-content__panel'>
-                        123
+                        <ControlPanel waterVolume={parameters.waterVolume} />
+                        <Visualizer waterVolume={parameters.waterVolume} />
                     </div>
                     <div className='main-content__panel'>
                         <InfoPanel parameters={parameters} />

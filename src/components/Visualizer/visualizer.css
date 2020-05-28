@@ -1,0 +1,32 @@
+.visualization-panel {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water-vizualization {
+    /* background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 3px solid cornflowerblue; */
+    width: 275px;
+    height: 249px;
+    background-image: url('/images/aqua.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.water-vizualization__water-block{
+    background-color: #3498db;
+    width: 263px;
+    height: 122px;
+    margin: 0 0 6px 6px;
+    position: relative;
+    /* border: 10px solid black; */
+    overflow: hidden;
+}

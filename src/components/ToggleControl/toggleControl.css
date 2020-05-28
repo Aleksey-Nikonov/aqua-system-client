@@ -1,0 +1,33 @@
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    border-width: 1px;
+    border-style: solid;
+}
+
+.toggle__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.toggle__indicator {
+    /* background-color: darkblue; */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+.toggle__indicator_active {
+    background-color: #27ae60;
+}
+
+.toggle__indicator_passive {
+    background-color: #c0392b;
+}

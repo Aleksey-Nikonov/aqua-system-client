@@ -6,9 +6,9 @@ import usePolling from './hooks/usePolling'
 
 function App() {
   let parameters = usePolling()
-  
+
   return (
-    <Main parameters={parameters} />
+    parameters && <Main parameters={parameters} />
   );
 }
 

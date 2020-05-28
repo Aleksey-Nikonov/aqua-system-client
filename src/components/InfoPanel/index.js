@@ -1,6 +1,8 @@
 import React from 'react'
 import moment from 'moment'
 
+import paramsMapping from '../../configs/paramsMapping.json'
+
 import './infoPanel.css'
 
 const InfoPanel = ({ parameters }) => {
@@ -11,7 +13,7 @@ const InfoPanel = ({ parameters }) => {
                 Object.keys(parameters)
                     .map((key, index) => (
                         <span key={index} className='info-panel__item'>
-                            {key}: {parameters[key]}
+                            {paramsMapping[key].description}: {parseInt(parameters[key]).toFixed(2)} {paramsMapping[key].unit}
                         </span>
                         )
                     )

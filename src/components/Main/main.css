@@ -8,7 +8,7 @@
 
 .main-content{
     display: flex;
-    width: 75%;
+    width: 65%;
     /* max-height: 100vh; */
     flex-direction: column;
     /* background-color: teal; */
@@ -40,8 +40,8 @@
 .main-content__panel {
     border: 1px solid #7f8c8d;
     border-radius: 5px;
+    /* background-color: cyan; */
     flex: 1;
-
 }
 
 .main-content__panel:first-child {
