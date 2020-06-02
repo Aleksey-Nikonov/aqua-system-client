@@ -22,6 +22,16 @@ const ControlPanel = ({ waterVolume }) => {
     const handleWaterTemperature = ({ target: { value } }) => setWaterTemperature(value)
     const handleWaterAdditionClick = () =>
     {
+        if (waterLevel < 0 || waterLevel > 10) 
+        {
+            window.alert("Уровень воды задается в диапазоне от 0 до 10")
+            return
+        }
+        if (waterTemperature < 0 || waterTemperature > 10) 
+        {
+            window.alert("Уровень температуры задается в диапазоне от 0 до 10")
+            return
+        }
         if (currentWaterVolume <= 2000)
         {
             aquaSystemClient.addFreshWater(waterLevel, waterTemperature)
@@ -30,11 +40,31 @@ const ControlPanel = ({ waterVolume }) => {
 
     const [ oxygenEnrichment, setOxygenEnrichment ] = useState(0)
     const handleOxygenEnrichmentLevel = ({ target: { value } }) => setOxygenEnrichment(value)
-    const handleOxygenEnrichmentPower = () => aquaSystemClient.setOxygenEnrichmentPower(oxygenEnrichment)
+    const handleOxygenEnrichmentPower = () => 
+    {
+        if ( oxygenEnrichment < 0 || oxygenEnrichment > 4) 
+        {
+            window.alert("Мощность обогащения кислородом задается в диапазоне от 0 до 4")
+        } 
+        else 
+        {
+            aquaSystemClient.setOxygenEnrichmentPower(oxygenEnrichment)
+        }
+    }
 
     const [ carbonDioxideLevel, setCarbonDioxideLevel ] = useState(0)
     const handleCarbonDioxideLevel = ({ target: { value } }) => setCarbonDioxideLevel(value)
-    const handleRemovalCarbonDioxide = () => aquaSystemClient.removeCarbonDioxide(carbonDioxideLevel)
+    const handleRemovalCarbonDioxide = () => 
+    {
+        if (carbonDioxideLevel < 0 || carbonDioxideLevel > 8)
+        {
+            window.alert("Удаление из воды углекислого газа задается в диапазоне от 0 до 8")
+        }
+        else 
+        {
+            aquaSystemClient.removeCarbonDioxide(carbonDioxideLevel)
+        }
+    }
 
     const closeValve = async () => await aquaSystemClient.closeValve()
     const openValve = async () => await aquaSystemClient.openValve()
@@ -91,7 +121,7 @@ const ControlPanel = ({ waterVolume }) => {
             </div>
             <div className='functional-area'>
                 <div className='functional-area__element'>
-                    <input type="number" min={0} max={5} value={carbonDioxideLevel} onChange={handleCarbonDioxideLevel} />
+                    <input type="number" min={0} max={8} value={carbonDioxideLevel} onChange={handleCarbonDioxideLevel} />
                     <Button onClick={handleRemovalCarbonDioxide}>Save</Button>
                     <Text textStyle={['functional-area__text']} defaultCursor>Удаление из воды углекислого газа</Text>
                 </div>
