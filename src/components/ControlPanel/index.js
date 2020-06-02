@@ -7,6 +7,7 @@ import Text from '../Text'
 import Button from '../Button'
 
 import * as aquaSystemClient from '../../services/aquaSystemClient'
+import configs from '../../resources/configs'
 
 import './controlPanel.css'
 
@@ -32,7 +33,7 @@ const ControlPanel = ({ waterVolume }) => {
             window.alert("Уровень температуры задается в диапазоне от 0 до 10")
             return
         }
-        if (currentWaterVolume <= 2000)
+        if (currentWaterVolume <= configs.MAX_WATER_VOLUME)
         {
             aquaSystemClient.addFreshWater(waterLevel, waterTemperature)
         }

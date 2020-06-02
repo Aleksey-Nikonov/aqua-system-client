@@ -5,7 +5,6 @@
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    /* text-transform: uppercase; */
     border-width: 1px;
     border-style: solid;
 }
@@ -17,7 +16,6 @@
 }
 
 .toggle__indicator {
-    /* background-color: darkblue; */
     border-radius: 50%;
     width: 10px;
     height: 10px;

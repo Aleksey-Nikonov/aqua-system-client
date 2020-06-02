@@ -1,16 +1,17 @@
 import React from 'react'
 
+import configs from '../../resources/configs'
+
 import './visualizer.css'
 import './bubbles.css'
 
 const WATER_BLOCK_HEIGH = 122;
-const MAX_WATER_LEVEL = 2000;
-
-
 
 const Visualizer = React.memo( ({ waterVolume }) => {
-    const height = (waterVolume - 200 - 1)/(2000 - 1)*(122 - 1)+1;
+    const calculatedHeight = (waterVolume - 1)/(configs.MAX_WATER_VOLUME - 1) * (WATER_BLOCK_HEIGH - 1) + 1
     // https://www.cyberforum.ru/cpp-beginners/thread1839821.html
+    
+    const height = calculatedHeight > WATER_BLOCK_HEIGH ? WATER_BLOCK_HEIGH : calculatedHeight
 
     return (
         <div className='visualization-panel'>

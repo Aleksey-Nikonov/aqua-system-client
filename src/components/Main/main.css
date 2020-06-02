@@ -2,23 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: coral; */
     height: 100vh;
 }
 
 .main-content{
     display: flex;
     width: 65%;
-    /* max-height: 100vh; */
     flex-direction: column;
-    /* background-color: teal; */
     padding: 10px;
     border: 1px solid #7f8c8d;
     border-radius: 5px;
 }
 
 .main-content__header {
-    /* background-color: crimson; */
     padding: 10px;
     border-bottom: 1px solid #7f8c8d;
 }
@@ -31,16 +27,13 @@
 }
 
 .main-content__dashboard {
-    /* background-color: cadetblue; */
     display: flex;
-    /* padding: 10px; */
     padding-top: 10px;
 }
 
 .main-content__panel {
     border: 1px solid #7f8c8d;
     border-radius: 5px;
-    /* background-color: cyan; */
     flex: 1;
 }
 
