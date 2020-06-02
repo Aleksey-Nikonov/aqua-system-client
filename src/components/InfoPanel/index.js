@@ -1,7 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 
-import paramsMapping from '../../configs/paramsMapping.json'
+import paramsMapping from '../../resources/paramsMapping.json'
 
 import './infoPanel.css'
 

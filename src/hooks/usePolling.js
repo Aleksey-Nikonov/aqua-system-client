@@ -10,7 +10,6 @@ const usePolling = () => {
 
     useInterval(async () => {
         const response = await aquaSystemClient.getParameters()
-        // console.log('from usePolling', response)
         setParameters(response)
       }, _delayConfig)
 
